@@ -81,3 +81,13 @@ File: [weekly_study_time_pie_chart.py](weekly_study_time_pie_chart.py)
 **Output:** A pie chart with percentage labels and different slice colors. Python is highlighted using `explode`. Python accounts for 10 of the 24 total study hours (about 41.7%).
 
 **Concept learned:** Use `plt.pie()` for category proportions that make up a whole. The `autopct` parameter displays percentages, `colors` sets slice colors, `explode` separates selected slices, and `startangle` rotates the chart.
+
+### 7. Comparing charts with subplots
+
+File: [subplots_comparison.py](subplots_comparison.py)
+
+**What it shows:** Three charts in one figure using the same subject data: a line plot for study hours, a bar chart for marks, and a pie chart for the share of study time.
+
+**Output:** The charts appear side by side in a 1-row, 3-column layout. Axis labels make the line and bar charts easier to read, and `plt.tight_layout()` helps prevent titles and labels from overlapping.
+
+**Concept learned:** Use `plt.subplot(rows, columns, position)` to choose a chart area in a figure. The position is counted from left to right, then top to bottom. All subplots in the same figure should use a consistent grid layout.
