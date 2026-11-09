@@ -61,3 +61,13 @@ File: [student_marks_histogram.py](student_marks_histogram.py)
 **Output:** A pink histogram with black edges. The x-axis shows student marks and the y-axis shows how many marks fall within each interval (frequency). The bars touch because the intervals are adjacent parts of a continuous numerical range.
 
 **Concept learned:** Increasing the number of bins creates more, narrower intervals and gives a more detailed view of the distribution. It does not mean every interval contains the same number of students.
+
+### 5. Study hours vs exam marks scatter plot
+
+File: [study_hours_vs_marks_scatter.py](study_hours_vs_marks_scatter.py)
+
+**What it shows:** The relationship between students' study hours and exam marks.
+
+**Output:** Eight blue circular points. The points generally move upward as study hours increase, showing a positive correlation in this example.
+
+**Concept learned:** Use `plt.scatter(x, y)` to plot the relationship between two numerical variables. The `marker` parameter changes the point shape, `s` controls point size, and `alpha` controls transparency.
