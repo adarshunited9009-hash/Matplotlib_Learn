@@ -91,3 +91,14 @@ File: [subplots_comparison.py](subplots_comparison.py)
 **Output:** The charts appear side by side in a 1-row, 3-column layout. Axis labels make the line and bar charts easier to read, and `plt.tight_layout()` helps prevent titles and labels from overlapping.
 
 **Concept learned:** Use `plt.subplot(rows, columns, position)` to choose a chart area in a figure. The position is counted from left to right, then top to bottom. All subplots in the same figure should use a consistent grid layout.
+
+
+### 8. Customized weekly study-hours chart
+
+File: [weekly_study_analysis_customized.py](weekly_study_analysis_customized.py)
+
+**What it shows:** Daily study hours from Monday to Sunday, with the highest value highlighted.
+
+**Output:** A blue line chart with circular markers, an 8 × 5 inch figure, dashed grid lines, and an annotation marking Saturday's 7 study hours.
+
+**Concept learned:** Customize a figure with `figsize`, set line color and markers, style grid lines, and use `plt.annotate()` to call attention to an important data point.
