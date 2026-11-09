@@ -71,3 +71,13 @@ File: [study_hours_vs_marks_scatter.py](study_hours_vs_marks_scatter.py)
 **Output:** Eight blue circular points. The points generally move upward as study hours increase, showing a positive correlation in this example.
 
 **Concept learned:** Use `plt.scatter(x, y)` to plot the relationship between two numerical variables. The `marker` parameter changes the point shape, `s` controls point size, and `alpha` controls transparency.
+
+### 6. Weekly study time pie chart
+
+File: [weekly_study_time_pie_chart.py](weekly_study_time_pie_chart.py)
+
+**What it shows:** How weekly study time is divided across Python, Maths, Java, DBMS, and English.
+
+**Output:** A pie chart with percentage labels and different slice colors. Python is highlighted using `explode`. Python accounts for 10 of the 24 total study hours (about 41.7%).
+
+**Concept learned:** Use `plt.pie()` for category proportions that make up a whole. The `autopct` parameter displays percentages, `colors` sets slice colors, `explode` separates selected slices, and `startangle` rotates the chart.
