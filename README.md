@@ -51,3 +51,13 @@ Run any program, for example:
 python vertical_bar_chart.py
 python horizontal_bar_chart.py
 ```
+
+### 4. Student marks histogram
+
+File: [student_marks_histogram.py](student_marks_histogram.py)
+
+**What it shows:** The distribution of marks for 20 students, grouped into 5 numerical intervals (bins).
+
+**Output:** A pink histogram with black edges. The x-axis shows student marks and the y-axis shows how many marks fall within each interval (frequency). The bars touch because the intervals are adjacent parts of a continuous numerical range.
+
+**Concept learned:** Increasing the number of bins creates more, narrower intervals and gives a more detailed view of the distribution. It does not mean every interval contains the same number of students.
