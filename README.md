@@ -5,9 +5,9 @@ This repository contains my Matplotlib practice as I learn data visualization wi
 ## Topics covered
 
 - Line plots using `plt.plot()`
-- Adding axis labels and a title
-- Grid lines
-- Customizing line color, markers, and line style
+- Bar charts using `plt.bar()` and `plt.barh()`
+- Adding axis labels, titles, and grid lines
+- Customizing line color, markers, line style, bar color, and bar width
 
 ## Practice programs
 
@@ -17,14 +17,25 @@ File: [line_plot_study_hours.py](line_plot_study_hours.py)
 
 **What it shows:** Study hours recorded across Monday to Sunday.
 
-**Data used:**
-- Days: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
-- Study hours: 2, 3, 4, 1, 6, 7, 8
+**Data:** Monday to Sunday; study hours are 2, 3, 4, 1, 6, 7, and 8.
 
-**Output:**
-A line chart with a yellow dashed line and circular markers. The x-axis shows the days of the week, the y-axis shows study hours, and the chart includes the title "Study Analysis" and grid lines.
+**Output:** A yellow dashed line with circular markers. Sunday has the highest study time (8 hours), while Thursday has the lowest (1 hour).
 
-**Observation:** Sunday has the highest study time (8 hours), while Thursday has the lowest (1 hour).
+### 2. Vertical product sales bar chart
+
+File: [vertical_bar_chart.py](vertical_bar_chart.py)
+
+**What it shows:** Sales comparison across laptop, mobile, tablet, headphones, and keyboard.
+
+**Output:** Five pink vertical bars. Mobile is highest at 80, and tablet is lowest at 30. The x-axis displays product names and the y-axis displays sales.
+
+### 3. Horizontal product sales bar chart
+
+File: [horizontal_bar_chart.py](horizontal_bar_chart.py)
+
+**What it shows:** The same product sales data displayed horizontally using `plt.barh()`.
+
+**Output:** Five pink horizontal bars. Product names appear on the y-axis and sales values on the x-axis. Mobile is highest at 80, and tablet is lowest at 30.
 
 ## How to run
 
@@ -34,8 +45,9 @@ Install Matplotlib if needed:
 pip install matplotlib
 ```
 
-Run the program:
+Run any program, for example:
 
 ```bash
-python line_plot_study_hours.py
+python vertical_bar_chart.py
+python horizontal_bar_chart.py
 ```
