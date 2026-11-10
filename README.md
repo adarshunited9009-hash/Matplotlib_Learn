@@ -6,7 +6,11 @@ This repository contains my Matplotlib practice as I learn data visualization wi
 
 - Line plots using `plt.plot()`
 - Bar charts using `plt.bar()` and `plt.barh()`
-- Adding axis labels, titles, and grid lines
+- Scatter plots using `plt.scatter()`
+- Histograms using `plt.hist()`
+- Pie charts and box plots
+- Subplots and multi-chart dashboards
+- Adding axis labels, titles, legends, and grid lines
 - Customizing line color, markers, line style, bar color, and bar width
 
 ## Practice programs
@@ -36,21 +40,6 @@ File: [horizontal_bar_chart.py](horizontal_bar_chart.py)
 **What it shows:** The same product sales data displayed horizontally using `plt.barh()`.
 
 **Output:** Five pink horizontal bars. Product names appear on the y-axis and sales values on the x-axis. Mobile is highest at 80, and tablet is lowest at 30.
-
-## How to run
-
-Install Matplotlib if needed:
-
-```bash
-pip install matplotlib
-```
-
-Run any program, for example:
-
-```bash
-python vertical_bar_chart.py
-python horizontal_bar_chart.py
-```
 
 ### 4. Student marks histogram
 
@@ -92,7 +81,6 @@ File: [subplots_comparison.py](subplots_comparison.py)
 
 **Concept learned:** Use `plt.subplot(rows, columns, position)` to choose a chart area in a figure. The position is counted from left to right, then top to bottom. All subplots in the same figure should use a consistent grid layout.
 
-
 ### 8. Customized weekly study-hours chart
 
 File: [weekly_study_analysis_customized.py](weekly_study_analysis_customized.py)
@@ -102,3 +90,35 @@ File: [weekly_study_analysis_customized.py](weekly_study_analysis_customized.py)
 **Output:** A blue line chart with circular markers, an 8 × 5 inch figure, dashed grid lines, and an annotation marking Saturday's 7 study hours.
 
 **Concept learned:** Customize a figure with `figsize`, set line color and markers, style grid lines, and use `plt.annotate()` to call attention to an important data point.
+
+### 9. Sales performance dashboard
+
+File: [sales_performance_dashboard.py](sales_performance_dashboard.py)
+
+**What it shows:** A small retail sales analysis using four charts in a 2 × 2 dashboard.
+
+**Charts included:**
+- Line chart for daily revenue across the week.
+- Bar chart comparing revenue across five product categories.
+- Scatter plot comparing advertising spend with daily revenue.
+- Histogram showing the distribution of order values.
+
+**Output:** One figure with four titled charts, axis labels, and a main dashboard title. Electronics has the highest category revenue (18,000), while Books has the lowest (6,200). Saturday has the highest daily revenue (7,800).
+
+**Concept learned:** Use `fig, axes = plt.subplots(2, 2)` to create a grid of plots. Use each axes object's methods such as `plot()`, `bar()`, `scatter()`, `hist()`, and `set_title()`. Use `fig.suptitle()` for the overall title and `plt.tight_layout(rect=[0, 0, 1, 0.95])` to leave space for it.
+
+## How to run
+
+Install Matplotlib if needed:
+
+```bash
+pip install matplotlib
+```
+
+Run any program, for example:
+
+```bash
+python vertical_bar_chart.py
+python horizontal_bar_chart.py
+python sales_performance_dashboard.py
+```
